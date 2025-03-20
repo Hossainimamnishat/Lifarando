@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">lifarandojava</string>
-<<<<<<< HEAD
     <string name="forgot_password">Forgot password</string>
-=======
->>>>>>> 1d9e67dfbc694efeb4f97aad5f6423f40637fcde
+
 </resources>

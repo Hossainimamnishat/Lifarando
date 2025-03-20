@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">lifarandojava</string>
     <string name="forgot_password">Forgot password</string>
+    <string name="scoober">Scoober</string>
+    <string name="email">Email</string>
 
 </resources>

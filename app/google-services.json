@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661890642451",
+    "project_id": "lifarandojava-3310087c",
+    "storage_bucket": "lifarandojava-3310087c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661890642451:android:9ec8e65a27dd16118f85e6",
+        "android_client_info": {
+          "package_name": "com.example.lifarandojava"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjuEzfrQCZudCdY60UhtABMYXjnq60sxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

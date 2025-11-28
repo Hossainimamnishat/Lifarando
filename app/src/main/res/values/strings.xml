@@ -72,5 +72,6 @@
     <string name="profile">Profile</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="todo">TODO</string>
 
 </resources>

@@ -3,7 +3,6 @@ package com.example.lifarandojava;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -16,10 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-import java.io.BufferedOutputStream;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
@@ -38,16 +33,13 @@ public class LoginActivity extends AppCompatActivity {
 
         Button loginbutton = findViewById(R.id.loginButton);
 
-        loginbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        loginbutton.setOnClickListener(v -> {
 
 //                Log.d("test","login");
-                EditText email = findViewById(R.id.emailInput);
-                TextInputEditText password = findViewById(R.id.passwordInput);
-                login(email.getText().toString(),password.getText().toString());
+            EditText email = findViewById(R.id.emailInput);
+            TextInputEditText password = findViewById(R.id.passwordInput);
+            login(email.getText().toString(), Objects.requireNonNull(password.getText()).toString());
 
-            }
         });
 
     }
@@ -62,9 +54,9 @@ public class LoginActivity extends AppCompatActivity {
             }else{
                 Toast.makeText(this,"Invalid Credential",Toast.LENGTH_LONG).show();
             }
-        
+
         }catch (Exception e){
-            Log.d("Exeption","login"+e.toString());
+            Log.d("Exeption","login"+ e);
         }
     }
 }

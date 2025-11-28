@@ -54,10 +54,13 @@ public class LoginActivity extends AppCompatActivity {
 
     private void login( String email,String password){
         try {
-            if (Objects.equals(email, "1234@gmail.com") && Objects.equals(password, "23456@N")){
+            if (Objects.equals(email, "1234@gmail.com") && Objects.equals(password, "123456")){
                 Toast.makeText(this,"login succesfull",Toast.LENGTH_LONG).show();
 
-                startActivity(new Intent(this,shift.class));
+                // startActivity(new Intent(this,shift.class));
+                startActivity(new Intent(this,HomeActivity.class));
+            }else{
+                Toast.makeText(this,"Invalid Credential",Toast.LENGTH_LONG).show();
             }
         
         }catch (Exception e){
